@@ -17,4 +17,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Определим команду для запуска скрипта
-CMD ["python", "SQL connect.py"]
+CMD ["python", "sql_connect.py"]
