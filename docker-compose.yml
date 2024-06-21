@@ -1,0 +1,29 @@
+version: '3.9'
+
+services:
+  postgres:
+    image: postgres:latest
+    container_name: my-postgres
+    environment:
+      POSTGRES_PASSWORD: 12345
+      POSTGRES_DB: Task
+    ports:
+      - "5432:5432"
+
+  python_app:
+    build: .
+    container_name: python_task1_docker
+    environment:
+      - DB_USER=postgres
+      - DB_PASSWORD=12345
+      - DB_HOST=my-postgres
+      - DB_PORT=5432
+      - DB_NAME=Task
+      - UPLOAD_FILES=+
+      - SQL_QUERY=SELECT * FROM students
+      - FILE_FORMAT=json
+      - FILE_NAME=output
+    volumes:
+      - ./BigData:/app/BigData
+    depends_on:
+      - postgres

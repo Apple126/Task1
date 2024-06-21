@@ -1,0 +1,180 @@
+2024-06-18 10:29:05,873 - __main__ - INFO - Загрузка переменных окружения
+2024-06-18 10:29:05,874 - __main__ - INFO - Создание подключения к базе данных
+2024-06-18 10:29:05,904 - __main__ - INFO - Указанная директория для JSON файлов: /home/user/Desktop/BigData
+2024-06-18 10:29:05,904 - __main__ - INFO - Выбранные для загрузки в базу файлы: ['rooms.json', 'students.json']
+2024-06-18 10:30:15,909 - __main__ - INFO - Загрузка отменена
+2024-06-18 10:30:25,717 - __main__ - INFO - Скрипт завершен
+2024-06-18 10:47:35,893 - __main__ - INFO - Загрузка переменных окружения
+2024-06-18 10:47:35,894 - __main__ - INFO - Создание подключения к базе данных
+2024-06-18 10:47:35,924 - __main__ - INFO - Указанная директория для JSON файлов: /home/user/Desktop/BigData
+2024-06-18 10:47:35,925 - __main__ - INFO - Выбранные для загрузки в базу файлы: ['rooms.json', 'students.json']
+2024-06-18 10:47:44,861 - __main__ - INFO - Загрузка отменена
+2024-06-18 10:47:48,231 - __main__ - INFO - Скрипт завершен
+2024-06-18 10:48:56,643 - __main__ - INFO - Загрузка переменных окружения
+2024-06-18 10:48:56,644 - __main__ - INFO - Создание подключения к базе данных
+2024-06-18 10:48:56,673 - __main__ - INFO - Указанная директория для JSON файлов: /home/user/Desktop/BigData
+2024-06-18 10:48:56,673 - __main__ - INFO - Выбранные для загрузки в базу файлы: ['rooms.json', 'students.json']
+2024-06-18 10:49:11,714 - __main__ - INFO - Загрузка отменена
+2024-06-18 10:49:18,217 - __main__ - INFO - Начало ввода SQL-запроса
+2024-06-18 10:49:41,482 - __main__ - ERROR - Ошибка при выполнении SQL-запроса или сохранении файла: (psycopg2.OperationalError) connection to server at "localhost" (127.0.0.1), port 5432 failed: ВАЖНО:  база данных "Task1234" не существует
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-06-18 10:58:49,770 - __main__ - INFO - Загрузка переменных окружения
+2024-06-18 10:58:49,808 - __main__ - ERROR - Ошибка при подключении к базе данных: (psycopg2.OperationalError) connection to server at "localhost" (127.0.0.1), port 5432 failed: ВАЖНО:  база данных "Task1234" не существует
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-06-18 10:58:49,808 - __main__ - INFO - Указанная директория для JSON файлов: /home/user/Desktop/BigData
+2024-06-18 10:58:49,808 - __main__ - INFO - Выбранные для загрузки в базу файлы: ['rooms.json', 'students.json']
+2024-06-18 11:00:16,897 - __main__ - INFO - Загрузка переменных окружения
+2024-06-18 11:00:16,898 - __main__ - INFO - Указанная директория для JSON файлов: /home/user/Desktop/BigData
+2024-06-18 11:00:16,898 - __main__ - INFO - Выбранные для загрузки в базу файлы: ['rooms.json', 'students.json']
+2024-06-18 11:04:39,189 - __main__ - INFO - Загрузка переменных окружения
+2024-06-18 11:04:39,227 - __main__ - ERROR - Ошибка при подключении к базе данных: (psycopg2.OperationalError) connection to server at "localhost" (127.0.0.1), port 5432 failed: ВАЖНО:  база данных "Task1234" не существует
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-06-18 11:04:39,227 - __main__ - INFO - Указанная директория для JSON файлов: /home/user/Desktop/BigData
+2024-06-18 11:04:39,227 - __main__ - INFO - Выбранные для загрузки в базу файлы: ['rooms.json', 'students.json']
+2024-06-18 11:04:47,346 - __main__ - INFO - Загрузка отменена
+2024-06-18 11:08:20,876 - __main__ - INFO - Загрузка переменных окружения
+2024-06-18 12:18:08,614 - __main__ - INFO - Загрузка переменных окружения
+2024-06-18 12:18:08,656 - __main__ - INFO - Успешное подключение к базе данных
+2024-06-18 12:18:08,656 - __main__ - INFO - Указанная директория для JSON файлов: /home/user/Desktop/BigData
+2024-06-18 12:18:08,656 - __main__ - INFO - Выбранные для загрузки в базу файлы: ['rooms.json', 'students.json']
+2024-06-18 12:18:17,749 - __main__ - INFO - Загрузка отменена
+2024-06-18 12:18:19,631 - __main__ - INFO - Скрипт завершен
+2024-06-18 12:18:52,620 - __main__ - INFO - Загрузка переменных окружения
+2024-06-18 12:18:52,621 - __main__ - ERROR - Ошибка при подключении к базе данных: invalid literal for int() with base 10: '5432aa'
+2024-06-18 12:20:07,242 - __main__ - INFO - Загрузка переменных окружения
+2024-06-18 12:20:07,272 - __main__ - ERROR - Ошибка при подключении к базе данных: (psycopg2.OperationalError) invalid port number: "543277"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-06-18 12:21:10,077 - __main__ - INFO - Загрузка переменных окружения
+2024-06-18 12:21:10,110 - __main__ - ERROR - Ошибка при подключении к базе данных: (psycopg2.OperationalError) invalid port number: "543277"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-06-18 12:21:29,155 - __main__ - INFO - Загрузка переменных окружения
+2024-06-18 12:21:29,197 - __main__ - INFO - Успешное подключение к базе данных
+2024-06-18 12:21:29,197 - __main__ - INFO - Указанная директория для JSON файлов: /home/user/Desktop/BigData
+2024-06-18 12:21:29,197 - __main__ - INFO - Выбранные для загрузки в базу файлы: ['rooms.json', 'students.json']
+2024-06-18 12:22:14,063 - __main__ - INFO - Загрузка отменена
+2024-06-18 12:22:17,798 - __main__ - INFO - Начало ввода SQL-запроса
+2024-06-18 12:22:40,296 - __main__ - INFO - Результат запроса в файле test123.csv сохранен по пути: /home/user/Desktop/BigData/Results/test123.csv
+2024-06-18 14:11:52,641 - __main__ - INFO - Загрузка переменных окружения
+2024-06-18 14:11:52,683 - __main__ - INFO - Успешное подключение к базе данных
+2024-06-18 14:11:52,683 - __main__ - INFO - Указанная директория для JSON файлов: /home/user/Desktop/BigData
+2024-06-18 14:11:52,683 - __main__ - INFO - Выбранные для загрузки в базу файлы: ['rooms.json', 'students.json']
+2024-06-18 14:11:56,501 - __main__ - INFO - Загрузка отменена
+2024-06-18 14:12:01,929 - __main__ - INFO - Начало ввода SQL-запроса
+2024-06-18 14:12:23,576 - __main__ - INFO - Результат запроса в файле lsdsajdka.csv сохранен по пути: /home/user/Desktop/BigData/Results/lsdsajdka.csv
+2024-06-18 14:12:35,177 - __main__ - INFO - Скрипт завершен
+2024-06-18 14:12:35,177 - __main__ - INFO - Скрипт завершен
+2024-06-20 09:36:24,281 - sql_connect - ERROR - Ошибка при подключении к базе данных: Connection failed
+2024-06-20 09:36:24,289 - sql_connect - INFO - Успешное подключение к базе данных
+2024-06-20 10:12:54,435 - sql_connect - ERROR - Ошибка при подключении к базе данных: Connection failed
+2024-06-20 10:12:54,436 - sql_connect - INFO - Успешное подключение к базе данных
+2024-06-20 10:29:41,922 - sql_connect - ERROR - Ошибка при подключении к базе данных: Connection failed
+2024-06-20 10:29:41,923 - sql_connect - INFO - Успешное подключение к базе данных
+2024-06-20 10:29:41,924 - sql_connect - INFO - Указанная директория для JSON файлов: /fake_directory
+2024-06-20 10:29:41,924 - sql_connect - INFO - Выбранные для загрузки в базу файлы: ['file1.json', 'file2.json']
+2024-06-20 10:29:41,925 - sql_connect - INFO - Загрузка данных из file1.json в таблицу file1
+2024-06-20 10:29:41,925 - sql_connect - INFO - Загрузка данных из file2.json в таблицу file2
+2024-06-20 10:31:03,790 - sql_connect - ERROR - Ошибка при подключении к базе данных: Connection failed
+2024-06-20 10:31:03,791 - sql_connect - INFO - Успешное подключение к базе данных
+2024-06-20 10:31:03,792 - sql_connect - INFO - Указанная директория для JSON файлов: /fake_directory
+2024-06-20 10:31:03,792 - sql_connect - INFO - Выбранные для загрузки в базу файлы: ['file1.json', 'file2.json']
+2024-06-20 10:31:03,794 - sql_connect - INFO - Загрузка данных из file1.json в таблицу file1
+2024-06-20 10:31:03,794 - sql_connect - INFO - Загрузка данных из file2.json в таблицу file2
+2024-06-20 10:31:03,801 - sql_connect - INFO - Начало ввода SQL-запроса
+2024-06-20 10:31:03,801 - sql_connect - INFO - Результат запроса в файле test_file.csv сохранен по пути: /home/user/Desktop/BigData/Results/test_file.csv
+2024-06-20 10:44:14,777 - sql_connect - ERROR - Ошибка при подключении к базе данных: Connection failed
+2024-06-20 10:44:14,778 - sql_connect - INFO - Успешное подключение к базе данных
+2024-06-20 10:44:14,779 - sql_connect - INFO - Указанная директория для JSON файлов: /fake_directory
+2024-06-20 10:44:14,779 - sql_connect - INFO - Выбранные для загрузки в базу файлы: ['file1.json', 'file2.json']
+2024-06-20 10:44:14,781 - sql_connect - INFO - Загрузка данных из file1.json в таблицу file1
+2024-06-20 10:44:14,781 - sql_connect - INFO - Загрузка данных из file2.json в таблицу file2
+2024-06-20 10:44:14,788 - sql_connect - INFO - Начало ввода SQL-запроса
+2024-06-20 10:44:14,789 - sql_connect - INFO - Результат запроса в файле test_file.csv сохранен по пути: /home/user/Desktop/BigData/Results/test_file.csv
+2024-06-20 10:49:55,117 - sql_connect - ERROR - Ошибка при подключении к базе данных: Connection failed
+2024-06-20 10:49:55,118 - sql_connect - INFO - Успешное подключение к базе данных
+2024-06-20 10:49:55,118 - sql_connect - INFO - Указанная директория для JSON файлов: /fake_directory
+2024-06-20 10:49:55,119 - sql_connect - INFO - Выбранные для загрузки в базу файлы: ['file1.json', 'file2.json']
+2024-06-20 10:49:55,120 - sql_connect - INFO - Загрузка данных из file1.json в таблицу file1
+2024-06-20 10:49:55,120 - sql_connect - INFO - Загрузка данных из file2.json в таблицу file2
+2024-06-20 10:49:55,128 - sql_connect - INFO - Начало ввода SQL-запроса
+2024-06-20 10:49:55,129 - sql_connect - INFO - Результат запроса в файле test_file.csv сохранен по пути: /home/user/Desktop/BigData/Results/test_file.csv
+2024-06-20 11:05:24,690 - __main__ - INFO - Загрузка переменных окружения
+2024-06-20 11:05:24,761 - __main__ - INFO - Успешное подключение к базе данных
+2024-06-20 11:05:24,761 - __main__ - INFO - Указанная директория для JSON файлов: /home/user/Desktop/BigData
+2024-06-20 11:05:24,761 - __main__ - INFO - Выбранные для загрузки в базу файлы: ['rooms.json', 'students.json']
+2024-06-20 11:05:30,484 - __main__ - INFO - Загрузка отменена
+2024-06-20 11:05:33,427 - __main__ - INFO - Скрипт завершен
+2024-06-20 11:23:26,811 - __main__ - INFO - Загрузка переменных окружения
+2024-06-20 11:23:26,854 - __main__ - INFO - Успешное подключение к базе данных
+2024-06-20 11:23:26,854 - __main__ - INFO - Указанная директория для JSON файлов: /home/user/Desktop/BigData
+2024-06-20 11:23:26,854 - __main__ - INFO - Выбранные для загрузки в базу файлы: ['rooms.json', 'students.json']
+2024-06-20 11:23:30,116 - __main__ - INFO - Загрузка отменена
+2024-06-20 11:23:35,644 - __main__ - INFO - Начало ввода SQL-запроса
+2024-06-20 11:24:11,228 - __main__ - INFO - Результат запроса в файле kkkk.json сохранен по пути: /home/user/Desktop/BigData/Results/kkkk.json
+2024-06-20 11:24:22,691 - __main__ - INFO - Скрипт завершен
+2024-06-20 13:53:17,741 - __main__ - INFO - Загрузка переменных для подключения к базе данных
+2024-06-20 13:53:17,771 - __main__ - ERROR - Ошибка при подключении к базе данных: (psycopg2.OperationalError) connection to server at "localhost" (127.0.0.1), port 5435 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-06-20 13:53:17,771 - __main__ - INFO - Ошибка во время выполнения скрипта: (psycopg2.OperationalError) connection to server at "localhost" (127.0.0.1), port 5435 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-06-20 13:53:17,771 - __main__ - INFO - Скрипт завершен
+2024-06-20 13:57:50,771 - __main__ - INFO - Загрузка переменных для подключения к базе данных
+2024-06-20 13:57:50,801 - __main__ - ERROR - Ошибка при подключении к базе данных: (psycopg2.OperationalError) connection to server at "localhost" (127.0.0.1), port 5435 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-06-20 13:57:50,801 - __main__ - INFO - Указанная директория для JSON файлов: /home/user/Desktop/BigData
+2024-06-20 13:57:50,801 - __main__ - INFO - Выбранные для загрузки в базу файлы: ['rooms.json', 'students.json']
+2024-06-20 13:58:07,738 - __main__ - INFO - Скрипт завершен
+2024-06-20 13:58:14,148 - __main__ - INFO - Загрузка переменных для подключения к базе данных
+2024-06-20 13:58:14,179 - __main__ - ERROR - Ошибка при подключении к базе данных: (psycopg2.OperationalError) connection to server at "localhost" (127.0.0.1), port 5435 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-06-20 13:58:14,179 - __main__ - INFO - Ошибка во время выполнения скрипта: (psycopg2.OperationalError) connection to server at "localhost" (127.0.0.1), port 5435 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-06-20 13:58:14,180 - __main__ - INFO - Скрипт завершен
+2024-06-20 13:58:56,058 - __main__ - INFO - Загрузка переменных для подключения к базе данных
+2024-06-20 13:58:56,100 - __main__ - INFO - Успешное подключение к базе данных
+2024-06-20 13:58:56,100 - __main__ - INFO - Указанная директория для JSON файлов: /home/user/Desktop/BigData
+2024-06-20 13:58:56,100 - __main__ - INFO - Выбранные для загрузки в базу файлы: ['rooms.json', 'students.json']
+2024-06-20 13:59:41,322 - __main__ - INFO - Скрипт завершен
+2024-06-20 15:29:13,229 - __main__ - INFO - Загрузка переменных для подключения к базе данных
+2024-06-20 15:29:13,270 - __main__ - INFO - Успешное подключение к базе данных
+2024-06-20 15:29:13,270 - __main__ - INFO - Указанная директория для JSON файлов: /home/user/Desktop/BigData
+2024-06-20 15:29:13,270 - __main__ - INFO - Выбранные для загрузки в базу файлы: ['rooms.json', 'students.json']
+2024-06-20 15:29:17,514 - __main__ - INFO - Загрузка отменена
+2024-06-20 15:29:19,010 - __main__ - INFO - Скрипт завершен
+2024-06-20 15:33:38,108 - __main__ - INFO - Загрузка переменных для подключения к базе данных
+2024-06-20 15:33:38,151 - __main__ - INFO - Успешное подключение к базе данных
+2024-06-20 15:33:38,151 - __main__ - INFO - Указанная директория для JSON файлов: /home/user/Desktop/BigData
+2024-06-20 15:33:38,151 - __main__ - INFO - Выбранные для загрузки в базу файлы: ['rooms.json', 'students.json']
+2024-06-20 15:33:41,334 - __main__ - INFO - Загрузка отменена
+2024-06-20 15:33:48,725 - __main__ - INFO - Скрипт завершен
+2024-06-20 15:33:54,731 - __main__ - INFO - Загрузка переменных для подключения к базе данных
+2024-06-20 15:33:54,771 - __main__ - INFO - Успешное подключение к базе данных
+2024-06-20 15:33:54,771 - __main__ - INFO - Указанная директория для JSON файлов: /home/user/Desktop/BigData
+2024-06-20 15:33:54,771 - __main__ - INFO - Выбранные для загрузки в базу файлы: ['rooms.json', 'students.json']
+2024-06-20 15:33:59,989 - __main__ - INFO - Загрузка отменена
+2024-06-20 15:34:18,717 - __main__ - INFO - Начало ввода SQL-запроса
+2024-06-20 15:34:48,998 - __main__ - INFO - Результат запроса в testtest.csv сохранен по пути: /home/user/Desktop/BigData/Results/testtest.csv
+2024-06-20 15:35:06,078 - __main__ - INFO - Скрипт завершен
+2024-06-20 16:00:37,336 - __main__ - INFO - Загрузка переменных для подключения к базе данных
+2024-06-20 16:00:37,378 - __main__ - INFO - Успешное подключение к базе данных
+2024-06-20 16:00:37,378 - __main__ - INFO - Указанная директория для JSON файлов: /home/user/Desktop/BigData
+2024-06-20 16:00:37,378 - __main__ - INFO - Выбранные для загрузки в базу файлы: ['students_test.json', 'rooms_test.json']
+2024-06-20 16:00:49,683 - __main__ - INFO - Загрузка данных из students_test.json в таблицу students_test
+2024-06-20 16:00:49,701 - __main__ - INFO - Загрузка данных из rooms_test.json в таблицу rooms_test
+2024-06-20 16:01:52,874 - __main__ - INFO - Начало ввода SQL-запроса
+2024-06-20 16:02:26,499 - __main__ - INFO - Результат запроса в lkdsadasd.xml сохранен по пути: /home/user/Desktop/BigData/Results/lkdsadasd.xml
+2024-06-20 16:02:32,092 - __main__ - INFO - Скрипт завершен
