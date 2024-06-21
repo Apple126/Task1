@@ -182,3 +182,63 @@
 2024-06-21 13:04:09,950 - __main__ - ERROR - Ошибка при подключении к базе данных: invalid literal for int() with base 10: 'None'
 2024-06-21 13:04:09,950 - __main__ - INFO - Ошибка во время выполнения скрипта: invalid literal for int() with base 10: 'None'
 2024-06-21 13:04:09,951 - __main__ - INFO - Скрипт завершен
+2024-06-21 14:00:50,613 - __main__ - INFO - Загрузка переменных для подключения к базе данных
+2024-06-21 14:00:50,643 - __main__ - ERROR - Ошибка при подключении к базе данных: (psycopg2.OperationalError) connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-06-21 14:00:50,644 - __main__ - INFO - Ошибка во время выполнения скрипта: (psycopg2.OperationalError) connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-06-21 14:00:50,644 - __main__ - INFO - Скрипт завершен
+2024-06-21 14:04:39,749 - __main__ - INFO - Загрузка переменных для подключения к базе данных
+2024-06-21 14:04:39,807 - __main__ - INFO - Успешное подключение к базе данных
+2024-06-21 14:04:39,807 - __main__ - INFO - Указанная директория для JSON файлов: /home/user/Desktop/BigData
+2024-06-21 14:04:39,807 - __main__ - INFO - Выбранные для загрузки в базу файлы: ['rooms.json', 'students.json']
+2024-06-21 14:04:45,274 - __main__ - INFO - Загрузка отменена
+2024-06-21 14:04:56,518 - __main__ - INFO - Скрипт завершен
+2024-06-21 14:15:42,445 - sql_connect - ERROR - Ошибка при подключении к базе данных: Connection failed
+2024-06-21 14:15:54,033 - sql_connect - INFO - Успешное подключение к базе данных
+2024-06-21 14:16:02,916 - sql_connect - INFO - Указанная директория для JSON файлов: /fake_directory
+2024-06-21 14:16:02,916 - sql_connect - INFO - Выбранные для загрузки в базу файлы: ['file1.json', 'file2.json']
+2024-06-21 14:17:30,259 - sql_connect - INFO - Загрузка данных из file1.json в таблицу file1
+2024-06-21 14:17:30,259 - sql_connect - INFO - Загрузка данных из file2.json в таблицу file2
+2024-06-21 14:20:31,147 - sql_connect - INFO - Загрузка данных из file1.json в таблицу file1
+2024-06-21 14:20:31,148 - sql_connect - INFO - Загрузка данных из file2.json в таблицу file2
+2024-06-21 14:21:19,135 - sql_connect - INFO - Загрузка данных из file1.json в таблицу file1
+2024-06-21 14:21:19,135 - sql_connect - INFO - Загрузка данных из file2.json в таблицу file2
+2024-06-21 14:21:22,753 - sql_connect - INFO - Указанная директория для JSON файлов: /fake_directory
+2024-06-21 14:21:22,753 - sql_connect - INFO - Выбранные для загрузки в базу файлы: ['file1.json', 'file2.json']
+2024-06-21 14:21:22,755 - sql_connect - INFO - Загрузка данных из file1.json в таблицу file1
+2024-06-21 14:21:22,755 - sql_connect - INFO - Загрузка данных из file2.json в таблицу file2
+2024-06-21 14:21:26,236 - sql_connect - ERROR - Ошибка при подключении к базе данных: Connection failed
+2024-06-21 14:21:32,140 - sql_connect - ERROR - Ошибка при подключении к базе данных: Connection failed
+2024-06-21 14:21:32,141 - sql_connect - INFO - Успешное подключение к базе данных
+2024-06-21 14:24:25,405 - sql_connect - INFO - Загрузка данных из file1.json в таблицу file1
+2024-06-21 14:24:25,405 - sql_connect - INFO - Загрузка данных из file2.json в таблицу file2
+2024-06-21 14:24:29,966 - sql_connect - INFO - Указанная директория для JSON файлов: /fake_directory
+2024-06-21 14:24:29,966 - sql_connect - INFO - Выбранные для загрузки в базу файлы: ['file1.json', 'file2.json']
+2024-06-21 14:24:29,968 - sql_connect - INFO - Загрузка данных из file1.json в таблицу file1
+2024-06-21 14:24:29,968 - sql_connect - INFO - Загрузка данных из file2.json в таблицу file2
+2024-06-21 14:24:33,512 - sql_connect - ERROR - Ошибка при подключении к базе данных: Connection failed
+2024-06-21 14:24:39,539 - sql_connect - INFO - Успешное подключение к базе данных
+2024-06-21 14:24:43,431 - sql_connect - ERROR - Ошибка при подключении к базе данных: Connection failed
+2024-06-21 14:24:43,432 - sql_connect - INFO - Успешное подключение к базе данных
+2024-06-21 14:34:05,733 - sql_connect - INFO - Начало ввода SQL-запроса
+2024-06-21 14:34:05,734 - sql_connect - INFO - Результат запроса в test_file.csv сохранен по пути: /fake_output_directory/test_file.csv
+2024-06-21 14:35:04,595 - sql_connect - INFO - Начало ввода SQL-запроса
+2024-06-21 14:35:04,597 - sql_connect - INFO - Результат запроса в test_file.csv сохранен по пути: /fake_output_directory/test_file.csv
+2024-06-21 14:38:07,108 - sql_connect - INFO - Начало ввода SQL-запроса
+2024-06-21 14:38:07,109 - sql_connect - INFO - Результат запроса в test_file.csv сохранен по пути: /fake_output_directory/test_file.csv
+2024-06-21 14:40:25,126 - sql_connect - INFO - Начало ввода SQL-запроса
+2024-06-21 14:40:25,127 - sql_connect - INFO - Результат запроса в test_file.csv сохранен по пути: /fake_output_directory/test_file.csv
+2024-06-21 14:41:54,734 - sql_connect - ERROR - Ошибка при подключении к базе данных: Connection failed
+2024-06-21 14:41:54,735 - sql_connect - INFO - Успешное подключение к базе данных
+2024-06-21 14:41:58,627 - sql_connect - ERROR - Ошибка при подключении к базе данных: Connection failed
+2024-06-21 14:42:03,806 - sql_connect - INFO - Указанная директория для JSON файлов: /fake_directory
+2024-06-21 14:42:03,806 - sql_connect - INFO - Выбранные для загрузки в базу файлы: ['file1.json', 'file2.json']
+2024-06-21 14:42:03,808 - sql_connect - INFO - Загрузка данных из file1.json в таблицу file1
+2024-06-21 14:42:03,808 - sql_connect - INFO - Загрузка данных из file2.json в таблицу file2
+2024-06-21 14:42:10,942 - sql_connect - INFO - Начало ввода SQL-запроса
+2024-06-21 14:42:10,943 - sql_connect - INFO - Результат запроса в test_file.csv сохранен по пути: /fake_output_directory/test_file.csv

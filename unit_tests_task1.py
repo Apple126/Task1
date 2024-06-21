@@ -82,13 +82,16 @@ class TestSQLQuery(unittest.TestCase):
 
     @patch('pandas.read_sql_query')
     @patch('builtins.input')
-    def test_sql_query(self, mock_input, mock_read_sql_query):
+    @patch('pandas.DataFrame.to_csv')
+    def test_sql_query(self, mock_to_csv, mock_input, mock_read_sql_query):
         mock_engine = MagicMock()
         mock_df = MagicMock()
         mock_read_sql_query.return_value = mock_df
         mock_input.side_effect = ['+', 'SELECT * FROM test_table', '', 'csv', 'test_file', '-']
 
-        with patch('builtins.open', mock_open()):
-            sql_query(mock_engine)
-            mock_read_sql_query.assert_called_once_with('SELECT * FROM test_table ', mock_engine)
-            mock_df.to_csv.assert_called_once_with('/home/user/Desktop/BigData/Results/test_file.csv', index=True)
+        output_directory = '/fake_output_directory'  # Фейковый путь к директории результатов
+
+        sql_query(mock_engine, output_directory)
+
+        mock_read_sql_query.assert_called_once_with('SELECT * FROM test_table ', mock_engine)
+        mock_df.to_csv.assert_called_once_with('/fake_output_directory/test_file.csv', index=True)
