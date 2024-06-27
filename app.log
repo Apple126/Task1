@@ -242,3 +242,115 @@
 2024-06-21 14:42:03,808 - sql_connect - INFO - Загрузка данных из file2.json в таблицу file2
 2024-06-21 14:42:10,942 - sql_connect - INFO - Начало ввода SQL-запроса
 2024-06-21 14:42:10,943 - sql_connect - INFO - Результат запроса в test_file.csv сохранен по пути: /fake_output_directory/test_file.csv
+2024-06-27 11:00:03,846 - __main__ - INFO - Загрузка переменных для подключения к базе данных
+2024-06-27 11:00:03,903 - __main__ - INFO - Успешное подключение к базе данных
+2024-06-27 11:00:03,903 - __main__ - INFO - Указанная директория для JSON файлов: /home/user/Desktop/BigData
+2024-06-27 11:00:03,903 - __main__ - INFO - Выбранные для загрузки в базу файлы: ['students2.json', 'rooms1.json']
+2024-06-27 11:00:28,456 - __main__ - INFO - Скрипт завершен
+2024-06-27 11:00:42,000 - __main__ - INFO - Загрузка переменных для подключения к базе данных
+2024-06-27 11:00:42,040 - __main__ - INFO - Успешное подключение к базе данных
+2024-06-27 11:00:42,041 - __main__ - INFO - Указанная директория для JSON файлов: /home/user/Desktop/BigData
+2024-06-27 11:00:42,041 - __main__ - INFO - Выбранные для загрузки в базу файлы: ['students2.json', 'rooms1.json']
+2024-06-27 11:00:45,650 - __main__ - INFO - Загрузка данных из students2.json в таблицу students2
+2024-06-27 11:00:45,667 - __main__ - INFO - Загрузка данных из rooms1.json в таблицу rooms1
+2024-06-27 11:02:50,286 - __main__ - INFO - Начало ввода SQL-запроса
+2024-06-27 11:04:12,563 - __main__ - INFO - Результат запроса в result_test.csv сохранен по пути: /home/user/Desktop/BigData/Results/result_test.csv
+2024-06-27 11:06:20,701 - __main__ - INFO - Начало ввода SQL-запроса
+2024-06-27 11:07:16,364 - __main__ - INFO - Результат запроса в query_1___.csv сохранен по пути: /home/user/Desktop/BigData/Results/query_1___.csv
+2024-06-27 11:12:21,631 - __main__ - INFO - Начало ввода SQL-запроса
+2024-06-27 11:12:44,450 - __main__ - INFO - Результат запроса в query_2.csv сохранен по пути: /home/user/Desktop/BigData/Results/query_2.csv
+2024-06-27 11:12:46,815 - __main__ - INFO - Скрипт завершен
+2024-06-27 11:16:58,237 - __main__ - INFO - Загрузка переменных для подключения к базе данных
+2024-06-27 11:16:58,268 - __main__ - ERROR - Ошибка при подключении к базе данных: (psycopg2.OperationalError) connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-06-27 11:16:58,268 - __main__ - INFO - Ошибка во время выполнения скрипта: (psycopg2.OperationalError) connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-06-27 11:16:58,268 - __main__ - INFO - Скрипт завершен
+2024-06-27 11:18:35,024 - __main__ - INFO - Загрузка переменных для подключения к базе данных
+2024-06-27 11:18:35,054 - __main__ - ERROR - Ошибка при подключении к базе данных: (psycopg2.OperationalError) connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-06-27 11:18:35,054 - __main__ - INFO - Ошибка во время выполнения скрипта: (psycopg2.OperationalError) connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-06-27 11:18:35,054 - __main__ - INFO - Скрипт завершен
+2024-06-27 11:19:16,044 - __main__ - INFO - Загрузка переменных для подключения к базе данных
+2024-06-27 11:19:16,086 - __main__ - INFO - Успешное подключение к базе данных
+2024-06-27 11:19:16,087 - __main__ - INFO - Указанная директория для JSON файлов: /home/user/Desktop/BigData
+2024-06-27 11:19:16,087 - __main__ - INFO - Выбранные для загрузки в базу файлы: ['students2.json', 'rooms1.json']
+2024-06-27 11:19:19,807 - __main__ - INFO - Скрипт завершен
+2024-06-27 11:19:59,251 - __main__ - INFO - Загрузка переменных для подключения к базе данных
+2024-06-27 11:19:59,283 - __main__ - ERROR - Ошибка при подключении к базе данных: (psycopg2.OperationalError) could not translate host name "localhost6" to address: Temporary failure in name resolution
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-06-27 11:19:59,283 - __main__ - INFO - Ошибка во время выполнения скрипта: (psycopg2.OperationalError) could not translate host name "localhost6" to address: Temporary failure in name resolution
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-06-27 11:19:59,283 - __main__ - INFO - Скрипт завершен
+2024-06-27 11:20:39,643 - __main__ - INFO - Загрузка переменных для подключения к базе данных
+2024-06-27 11:20:39,681 - __main__ - ERROR - Ошибка при подключении к базе данных: (psycopg2.OperationalError) connection to server at "localhost" (127.0.0.1), port 5432 failed: ВАЖНО:  база данных "Task7" не существует
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-06-27 11:20:39,682 - __main__ - INFO - Ошибка во время выполнения скрипта: (psycopg2.OperationalError) connection to server at "localhost" (127.0.0.1), port 5432 failed: ВАЖНО:  база данных "Task7" не существует
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-06-27 11:20:39,682 - __main__ - INFO - Скрипт завершен
+2024-06-27 11:25:18,682 - __main__ - INFO - Загрузка переменных для подключения к базе данных
+2024-06-27 11:25:18,714 - __main__ - ERROR - Ошибка при подключении к базе данных: (psycopg2.OperationalError) connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-06-27 11:25:18,714 - __main__ - INFO - Ошибка во время выполнения скрипта: (psycopg2.OperationalError) connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-06-27 11:25:18,714 - __main__ - INFO - Скрипт завершен
+2024-06-27 11:25:28,656 - __main__ - INFO - Загрузка переменных для подключения к базе данных
+2024-06-27 11:25:28,686 - __main__ - ERROR - Ошибка при подключении к базе данных: (psycopg2.OperationalError) connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-06-27 11:25:28,686 - __main__ - INFO - Указанная директория для JSON файлов: /home/user/Desktop/BigData
+2024-06-27 11:25:28,686 - __main__ - INFO - Выбранные для загрузки в базу файлы: ['students2.json', 'rooms1.json']
+2024-06-27 11:25:46,704 - __main__ - INFO - Загрузка отменена
+2024-06-27 11:25:51,643 - __main__ - INFO - Скрипт завершен
+2024-06-27 11:25:52,947 - __main__ - INFO - Загрузка переменных для подключения к базе данных
+2024-06-27 11:25:52,977 - __main__ - ERROR - Ошибка при подключении к базе данных: (psycopg2.OperationalError) connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-06-27 11:25:52,977 - __main__ - INFO - Указанная директория для JSON файлов: /home/user/Desktop/BigData
+2024-06-27 11:25:52,978 - __main__ - INFO - Выбранные для загрузки в базу файлы: ['students2.json', 'rooms1.json']
+2024-06-27 11:26:14,505 - __main__ - INFO - Ошибка во время выполнения скрипта: 'NoneType' object has no attribute 'cursor'
+2024-06-27 11:26:14,506 - __main__ - INFO - Скрипт завершен
+2024-06-27 11:29:39,054 - __main__ - INFO - Загрузка переменных для подключения к базе данных
+2024-06-27 11:29:39,085 - __main__ - ERROR - Ошибка при подключении к базе данных: (psycopg2.OperationalError) connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-06-27 11:29:39,085 - __main__ - INFO - Ошибка во время выполнения скрипта: (psycopg2.OperationalError) connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-06-27 11:29:39,085 - __main__ - INFO - Скрипт завершен
+2024-06-27 11:29:48,765 - __main__ - INFO - Загрузка переменных для подключения к базе данных
+2024-06-27 11:29:48,806 - __main__ - INFO - Успешное подключение к базе данных
+2024-06-27 11:29:48,807 - __main__ - INFO - Указанная директория для JSON файлов: /home/user/Desktop/BigData
+2024-06-27 11:29:48,807 - __main__ - INFO - Выбранные для загрузки в базу файлы: ['students2.json', 'rooms1.json']
+2024-06-27 11:29:58,741 - __main__ - INFO - Загрузка отменена
+2024-06-27 11:31:24,661 - __main__ - INFO - Начало ввода SQL-запроса
+2024-06-27 11:31:39,218 - __main__ - ERROR - Ошибка при выполнении SQL-запроса или сохранении файла: (psycopg2.errors.SyntaxError) ОШИБКА:  ошибка синтаксиса (примерное положение: "DKSADJALSD")
+LINE 1: DKSADJALSD 
+        ^
+
+[SQL: DKSADJALSD ]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-06-27 11:32:15,390 - __main__ - INFO - Начало ввода SQL-запроса
+2024-06-27 11:32:47,316 - __main__ - INFO - Результат запроса в thgh.rerfe сохранен по пути: /home/user/Desktop/BigData/Results/thgh.rerfe
+2024-06-27 11:33:04,602 - __main__ - INFO - Скрипт завершен

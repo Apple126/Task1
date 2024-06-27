@@ -9,13 +9,13 @@ logging.basicConfig(
     level=logging.DEBUG,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     handlers=[
-        logging.FileHandler('app.log'),
-        logging.StreamHandler()
+        logging.FileHandler('app.log'), # записываем логи в файл app.log
+        logging.StreamHandler() # выводим логи на консоль
     ]
 )
 logger = logging.getLogger(__name__)
 
-# Функция для проверки подключения
+# Функция для подключения к базе даннных (подключаемся к базе с исп. параметров из словаря db_params)
 def connection_to_database(db_params):
     try:
         engine = create_engine(f'postgresql://{db_params["user"]}:{db_params["password"]}@{db_params["host"]}:{db_params["port"]}/{db_params["database"]}')
@@ -97,7 +97,7 @@ def main():
             'database': os.getenv('DB_NAME'),
         }
 
-        source_directory = r'/home/user/Desktop/BigData' # директория загрузки с json файлами
+        source_directory = r'/home/user/Desktop/BigData' # директория с загрузочными json файлами
         output_directory = r'/home/user/Desktop/BigData/Results' # директория выгрузки результатов SQL-запроса
 
         engine = connection_to_database(db_params) # подключение к базе данных
