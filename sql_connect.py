@@ -1,6 +1,6 @@
 import os
 import pandas as pd
-from sqlalchemy import create_engine
+from sqlalchemy import create_engine, text
 from dotenv import load_dotenv
 import logging
 
@@ -37,9 +37,9 @@ def load_json_files(source_directory):
     return files
 
 def upload_json_files(json_files, results_directory, db_params, engine):
-    upload_confirmation = input(f'Требуется ли загрузка указанных файлов в базу {db_params["database"]}? [+ / -]: ')
+    upload_confirmation = input(f'Требуется ли загрузка файлов в базу {db_params["database"]}? [+ / -]: ')
     if upload_confirmation == '+':
-        which_files = input('Загрузить все указанные файлы [1] или выбрать определенные [2]? [1 / 2]')
+        which_files = input('Загрузить все указанные файлы [1] или выбрать определенные [2]? [1 / 2]: ')
         if which_files == '1':
             for file in json_files:
                 file_path = os.path.join(results_directory, file) # путь для выгрузки результата SQL запроса файлом
@@ -66,7 +66,7 @@ def sql_query(engine, output_directory, sql_queries_directory):  # написа�
             queries_file.append(i)
     logger.info(f'Доступные SQL-запросы в директории: {sql_queries_directory}: {queries_file}')
 
-    queries_confirmation = input(f'Подтвердите выполнение запросов: [+ / -]')
+    queries_confirmation = input(f'Подтвердите выполнение запросов [+ / -]: ')
     if queries_confirmation == '+':
         try:
             for query_file in queries_file:
@@ -76,11 +76,22 @@ def sql_query(engine, output_directory, sql_queries_directory):  # написа�
                 with open(query_file_path, 'r') as file:
                     sql_query = file.read()
 
-                df_result = pd.read_sql_query(sql_query, engine)  # выполнение SQL-запроса и сохранение результатов в DataFrame
+                try:
+                    df_result = pd.read_sql_query(sql_query, engine)  # выполнение SQL-запроса и сохранение результатов в DataFrame
 
-                output_path = fr'{output_directory}/{query_name}.csv'  # путь для выгрузки результатов
-                df_result.to_csv(output_path, index=True)
-                logger.info(f'Результат запроса в {query_name}.csv сохранен по пути: {output_path}')
+                    output_path = fr'{output_directory}/{query_name}.csv'  # путь для выгрузки результатов
+                    df_result.to_csv(output_path, index=True)
+                    logger.info(f'Результат запроса в {query_name}.csv сохранен по пути: {output_path}')
+
+                except Exception as e:
+                    if 'This result object does not return rows. It has been closed automatically.' in str(e):
+                        with engine.connect() as conn:
+                            conn.execute(text(sql_query))
+                            conn.commit() # завершаем транзакцию и сохраняем изменения в бд
+                        logger.info(f'Запрос {query_name} выполнен успешно')
+                    else:
+                        logger.error(f'Ошибка при выполнении SQL-запроса: {e}')
+
         except Exception as e:
             logger.error(f'Ошибка при выполнении SQL-запроса или сохранении файла: {e}')
 
