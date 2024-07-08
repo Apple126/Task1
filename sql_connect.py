@@ -48,39 +48,28 @@ def upload_json_files(json_files, results_directory, db_params, engine):
     else:
         logger.info('Загрузка отменена')
 
-def sql_query(engine, output_directory):      # написание SQL запроса к базе
-    while True:
-        do_i_need_query = input('Желаете написать SQL-запрос? [+ или -]: ')
-        if do_i_need_query == '-':
-            break
+def sql_query(engine, output_directory, sql_queries_directory):  # написание SQL запроса к базе
+    queries_file = []
+    for i in os.listdir(sql_queries_directory):
+        if i.endswith('.sql'):
+            queries_file.append(i)
+    logger.info(f'Доступные SQL-запросы в директории: {sql_queries_directory}: {queries_file}')
 
-        logger.info('Начало ввода SQL-запроса')
-        print('Введите SQL-запрос. Для завершения ввода - введите пустую строку : ')
-
-        query = ''  # собираем SQL запрос по строкам, вводим в консоль
-        while True:
-            line = input()
-            if line == '':
-                break
-            query += line + ' '
-
-        file_format = input('Введите формат файла для сохранения [json / xml / csv]: ').strip().lower()
-        file_name = input('Введите наименование файла: ')
-
-        output_path = fr'{output_directory}/{file_name}.{file_format}' #путь для выгрузки результатов
-
+    queries_confirmation = input(f'Подтвердите выполнение запросов: [+ или -]')
+    if queries_confirmation == '+':
         try:
-            # Выполнение SQL-запроса и сохранение результатов в DataFrame
-            df_result = pd.read_sql_query(query, engine)
+            for query_file in queries_file:
+                query_file_path = os.path.join(sql_queries_directory, query_file)  # путь к SQL запросам
+                query_name = query_file.split('.')[0]  # название файла результата
 
-            # Сохранение результата в папку, с выбранным форматом
-            if file_format == 'json':
-                df_result.to_json(output_path, orient='records')
-            elif file_format == 'xml':
-                df_result.to_xml(output_path)
-            elif file_format == 'csv':
+                with open(query_file_path, 'r') as file:
+                    sql_query = file.read()
+
+                df_result = pd.read_sql_query(sql_query, engine)  # выполнение SQL-запроса и сохранение результатов в DataFrame
+
+                output_path = fr'{output_directory}/{query_name}.csv'  # путь для выгрузки результатов
                 df_result.to_csv(output_path, index=True)
-            logger.info(f'Результат запроса в {file_name}.{file_format} сохранен по пути: {output_path}')
+                logger.info(f'Результат запроса в {query_name}.csv сохранен по пути: {output_path}')
         except Exception as e:
             logger.error(f'Ошибка при выполнении SQL-запроса или сохранении файла: {e}')
 
@@ -99,11 +88,12 @@ def main():
 
         source_directory = r'/home/user/Desktop/BigData' # директория с загрузочными json файлами
         output_directory = r'/home/user/Desktop/BigData/Results' # директория выгрузки результатов SQL-запроса
+        sql_queries_directory = r'/home/user/Desktop/BigData/SQL_queries' # директория c SQL-запросами (файлы .sql)
 
         engine = connection_to_database(db_params) # подключение к базе данных
         json_files_list = load_json_files(source_directory) # получаем список файлов json
         upload_json_files(json_files_list, source_directory, db_params, engine)
-        sql_query(engine, output_directory)
+        sql_query(engine, output_directory, sql_queries_directory)
     except Exception as e:
         logger.info(f'Ошибка во время выполнения скрипта: {e}')
     finally:

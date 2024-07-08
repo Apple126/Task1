@@ -354,3 +354,38 @@ LINE 1: DKSADJALSD
 2024-06-27 11:32:15,390 - __main__ - INFO - Начало ввода SQL-запроса
 2024-06-27 11:32:47,316 - __main__ - INFO - Результат запроса в thgh.rerfe сохранен по пути: /home/user/Desktop/BigData/Results/thgh.rerfe
 2024-06-27 11:33:04,602 - __main__ - INFO - Скрипт завершен
+2024-07-05 11:39:45,327 - __main__ - INFO - Загрузка переменных для подключения к базе данных
+2024-07-05 11:39:45,391 - __main__ - INFO - Успешное подключение к базе данных
+2024-07-05 11:39:45,391 - __main__ - INFO - Указанная директория для JSON файлов: /home/user/Desktop/BigData
+2024-07-05 11:39:45,391 - __main__ - INFO - Выбранные для загрузки в базу файлы: ['rooms.json', 'students.json']
+2024-07-05 11:39:51,501 - __main__ - INFO - Загрузка отменена
+2024-07-05 11:39:53,301 - __main__ - INFO - Скрипт завершен
+2024-07-08 08:46:55,284 - __main__ - INFO - Загрузка переменных для подключения к базе данных
+2024-07-08 08:46:55,328 - __main__ - INFO - Успешное подключение к базе данных
+2024-07-08 08:46:55,328 - __main__ - INFO - Указанная директория для JSON файлов: /home/user/Desktop/BigData
+2024-07-08 08:46:55,328 - __main__ - INFO - Выбранные для загрузки в базу файлы: ['rooms.json', 'students.json']
+2024-07-08 08:47:13,504 - __main__ - INFO - Загрузка отменена
+2024-07-08 08:47:13,504 - __main__ - INFO - Доступные SQL-запросы в директории: /home/user/Desktop/BigData/SQL_queries: ['query_2.sql', 'query_1.sql', 'query_3.sql', 'query_0_indx.sql', 'query_4.sql']
+2024-07-08 08:47:29,792 - __main__ - INFO - Скрипт завершен
+2024-07-08 08:47:44,390 - __main__ - INFO - Загрузка переменных для подключения к базе данных
+2024-07-08 08:47:44,433 - __main__ - INFO - Успешное подключение к базе данных
+2024-07-08 08:47:44,433 - __main__ - INFO - Указанная директория для JSON файлов: /home/user/Desktop/BigData
+2024-07-08 08:47:44,433 - __main__ - INFO - Выбранные для загрузки в базу файлы: ['rooms.json', 'students.json']
+2024-07-08 08:47:48,256 - __main__ - INFO - Загрузка отменена
+2024-07-08 08:47:48,256 - __main__ - INFO - Доступные SQL-запросы в директории: /home/user/Desktop/BigData/SQL_queries: ['query_2.sql', 'query_1.sql', 'query_3.sql', 'query_4.sql']
+2024-07-08 08:47:57,596 - __main__ - INFO - Результат запроса в query_2.csv сохранен по пути: /home/user/Desktop/BigData/Results\query_2.csv
+2024-07-08 08:47:57,611 - __main__ - INFO - Результат запроса в query_1.csv сохранен по пути: /home/user/Desktop/BigData/Results\query_1.csv
+2024-07-08 08:47:57,620 - __main__ - INFO - Результат запроса в query_3.csv сохранен по пути: /home/user/Desktop/BigData/Results\query_3.csv
+2024-07-08 08:47:57,638 - __main__ - INFO - Результат запроса в query_4.csv сохранен по пути: /home/user/Desktop/BigData/Results\query_4.csv
+2024-07-08 08:47:57,638 - __main__ - INFO - Скрипт завершен
+2024-07-08 08:49:41,948 - __main__ - INFO - Загрузка переменных для подключения к базе данных
+2024-07-08 08:49:41,990 - __main__ - INFO - Успешное подключение к базе данных
+2024-07-08 08:49:41,990 - __main__ - INFO - Указанная директория для JSON файлов: /home/user/Desktop/BigData
+2024-07-08 08:49:41,990 - __main__ - INFO - Выбранные для загрузки в базу файлы: ['rooms.json', 'students.json']
+2024-07-08 08:49:47,303 - __main__ - INFO - Загрузка отменена
+2024-07-08 08:49:47,304 - __main__ - INFO - Доступные SQL-запросы в директории: /home/user/Desktop/BigData/SQL_queries: ['query_2.sql', 'query_1.sql', 'query_3.sql', 'query_4.sql']
+2024-07-08 08:49:58,160 - __main__ - INFO - Результат запроса в query_2.csv сохранен по пути: /home/user/Desktop/BigData/Results/query_2.csv
+2024-07-08 08:49:58,174 - __main__ - INFO - Результат запроса в query_1.csv сохранен по пути: /home/user/Desktop/BigData/Results/query_1.csv
+2024-07-08 08:49:58,184 - __main__ - INFO - Результат запроса в query_3.csv сохранен по пути: /home/user/Desktop/BigData/Results/query_3.csv
+2024-07-08 08:49:58,200 - __main__ - INFO - Результат запроса в query_4.csv сохранен по пути: /home/user/Desktop/BigData/Results/query_4.csv
+2024-07-08 08:49:58,200 - __main__ - INFO - Скрипт завершен
