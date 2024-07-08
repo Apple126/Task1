@@ -476,3 +476,80 @@ ON students (room)
 2024-07-08 12:15:41,947 - __main__ - INFO - Доступные SQL-запросы в директории: /home/user/Desktop/BigData/SQL_queries: ['query_indx.sql']
 2024-07-08 12:16:00,897 - __main__ - INFO - Запрос query_indx выполнен успешно
 2024-07-08 12:16:00,897 - __main__ - INFO - Скрипт завершен
+2024-07-08 12:20:20,757 - __main__ - INFO - Загрузка переменных для подключения к базе данных
+2024-07-08 12:20:20,800 - __main__ - INFO - Успешное подключение к базе данных
+2024-07-08 12:20:20,800 - __main__ - INFO - Указанная директория для JSON файлов: /home/user/Desktop/BigData
+2024-07-08 12:20:20,800 - __main__ - INFO - Выбранные для загрузки в базу файлы: ['rooms.json', 'students.json']
+2024-07-08 12:20:23,027 - __main__ - INFO - Доступные SQL-запросы в директории: /home/user/Desktop/BigData/SQL_queries: ['query_indx.sql']
+2024-07-08 12:20:28,925 - __main__ - ERROR - Ошибка при выполнении SQL-запроса: (psycopg2.errors.DuplicateTable) ОШИБКА:  отношение "idx_room" уже существует
+
+[SQL: CREATE INDEX idx_room
+ON students (room)
+]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-07-08 12:20:28,926 - __main__ - INFO - Скрипт завершен
+2024-07-08 15:25:28,176 - __main__ - INFO - Загрузка переменных для подключения к базе данных
+2024-07-08 15:25:28,218 - db_connection - INFO - Успешное подключение к базе данных
+2024-07-08 15:25:28,218 - uploads - INFO - Указанная директория для JSON файлов: /home/user/Desktop/BigData
+2024-07-08 15:25:28,218 - uploads - INFO - Выбранные для загрузки в базу файлы: ['rooms.json', 'students.json']
+2024-07-08 15:25:34,993 - queries - INFO - Доступные SQL-запросы в директории: /home/user/Desktop/BigData/SQL_queries: ['query_2.sql', 'query_indx.sql', 'query_1.sql', 'query_3.sql', 'query_4.sql']
+2024-07-08 15:25:39,533 - queries - INFO - Результат запроса в query_2.csv сохранен по пути: /home/user/Desktop/BigData/Results/query_2.csv
+2024-07-08 15:25:39,534 - queries - ERROR - Ошибка при выполнении SQL-запроса: (psycopg2.errors.DuplicateTable) ОШИБКА:  отношение "idx_room" уже существует
+
+[SQL: CREATE INDEX idx_room
+ON students (room)
+]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-07-08 15:25:39,543 - queries - INFO - Результат запроса в query_1.csv сохранен по пути: /home/user/Desktop/BigData/Results/query_1.csv
+2024-07-08 15:25:39,552 - queries - INFO - Результат запроса в query_3.csv сохранен по пути: /home/user/Desktop/BigData/Results/query_3.csv
+2024-07-08 15:25:39,568 - queries - INFO - Результат запроса в query_4.csv сохранен по пути: /home/user/Desktop/BigData/Results/query_4.csv
+2024-07-08 15:25:39,568 - __main__ - INFO - Скрипт завершен
+2024-07-08 15:26:00,926 - __main__ - INFO - Загрузка переменных для подключения к базе данных
+2024-07-08 15:26:00,966 - db_connection - INFO - Успешное подключение к базе данных
+2024-07-08 15:26:00,966 - uploads - INFO - Указанная директория для JSON файлов: /home/user/Desktop/BigData
+2024-07-08 15:26:00,966 - uploads - INFO - Выбранные для загрузки в базу файлы: ['rooms.json', 'students.json']
+2024-07-08 15:26:03,881 - queries - INFO - Доступные SQL-запросы в директории: /home/user/Desktop/BigData/SQL_queries: ['query_2.sql', 'query_indx.sql', 'query_1.sql', 'query_3.sql', 'query_4.sql']
+2024-07-08 15:26:06,088 - queries - INFO - Результат запроса в query_2.csv сохранен по пути: /home/user/Desktop/BigData/Results/query_2.csv
+2024-07-08 15:26:06,108 - queries - INFO - Запрос query_indx выполнен успешно
+2024-07-08 15:26:06,116 - queries - INFO - Результат запроса в query_1.csv сохранен по пути: /home/user/Desktop/BigData/Results/query_1.csv
+2024-07-08 15:26:06,124 - queries - INFO - Результат запроса в query_3.csv сохранен по пути: /home/user/Desktop/BigData/Results/query_3.csv
+2024-07-08 15:26:06,141 - queries - INFO - Результат запроса в query_4.csv сохранен по пути: /home/user/Desktop/BigData/Results/query_4.csv
+2024-07-08 15:26:06,141 - __main__ - INFO - Скрипт завершен
+2024-07-08 15:49:41,117 - logg_settings - INFO - Загрузка переменных для подключения к базе данных
+2024-07-08 15:49:41,159 - db_connection - INFO - Успешное подключение к базе данных
+2024-07-08 15:49:41,159 - uploads - INFO - Указанная директория для JSON файлов: /home/user/Desktop/BigData
+2024-07-08 15:49:41,159 - uploads - INFO - Выбранные для загрузки в базу файлы: ['rooms.json', 'students.json']
+2024-07-08 15:49:45,035 - queries - INFO - Доступные SQL-запросы в директории: /home/user/Desktop/BigData/SQL_queries: ['query_2.sql', 'query_indx.sql', 'query_1.sql', 'query_3.sql', 'query_4.sql']
+2024-07-08 15:49:49,546 - queries - INFO - Результат запроса в query_2.csv сохранен по пути: /home/user/Desktop/BigData/Results/query_2.csv
+2024-07-08 15:49:49,547 - queries - ERROR - Ошибка при выполнении SQL-запроса: (psycopg2.errors.DuplicateTable) ОШИБКА:  отношение "idx_room" уже существует
+
+[SQL: CREATE INDEX idx_room
+ON students (room)
+]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-07-08 15:49:49,556 - queries - INFO - Результат запроса в query_1.csv сохранен по пути: /home/user/Desktop/BigData/Results/query_1.csv
+2024-07-08 15:49:49,565 - queries - INFO - Результат запроса в query_3.csv сохранен по пути: /home/user/Desktop/BigData/Results/query_3.csv
+2024-07-08 15:49:49,584 - queries - INFO - Результат запроса в query_4.csv сохранен по пути: /home/user/Desktop/BigData/Results/query_4.csv
+2024-07-08 15:49:49,584 - logg_settings - INFO - Скрипт завершен
+2024-07-08 15:52:42,558 - logg_settings - INFO - Загрузка переменных для подключения к базе данных
+2024-07-08 15:52:42,601 - db_connection - INFO - Успешное подключение к базе данных
+2024-07-08 15:52:42,601 - uploads - INFO - Указанная директория для JSON файлов: /home/user/Desktop/BigData
+2024-07-08 15:52:42,601 - uploads - INFO - Выбранные для загрузки в базу файлы: ['rooms.json', 'students.json']
+2024-07-08 15:52:45,278 - queries - INFO - Доступные SQL-запросы в директории: /home/user/Desktop/BigData/SQL_queries: ['query_2.sql', 'query_indx.sql', 'query_1.sql', 'query_3.sql', 'query_4.sql']
+2024-07-08 15:52:49,141 - queries - INFO - Результат запроса в query_2.csv сохранен по пути: /home/user/Desktop/BigData/Results/query_2.csv
+2024-07-08 15:52:49,142 - queries - ERROR - Ошибка при выполнении SQL-запроса: (psycopg2.errors.DuplicateTable) ОШИБКА:  отношение "idx_room" уже существует
+
+[SQL: CREATE INDEX idx_room
+ON students (room)
+]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-07-08 15:52:49,151 - queries - INFO - Результат запроса в query_1.csv сохранен по пути: /home/user/Desktop/BigData/Results/query_1.csv
+2024-07-08 15:52:49,159 - queries - INFO - Результат запроса в query_3.csv сохранен по пути: /home/user/Desktop/BigData/Results/query_3.csv
+2024-07-08 15:52:49,175 - queries - INFO - Результат запроса в query_4.csv сохранен по пути: /home/user/Desktop/BigData/Results/query_4.csv
+2024-07-08 15:52:49,175 - logg_settings - INFO - Скрипт завершен
+2024-07-08 16:10:49,223 - __main__ - INFO - Загрузка переменных для подключения к базе данных
+2024-07-08 16:10:49,269 - db_connection - INFO - Успешное подключение к базе данных
+2024-07-08 16:10:49,269 - uploads - INFO - Указанная директория для JSON файлов: /home/user/Desktop/BigData
+2024-07-08 16:10:49,269 - uploads - INFO - Выбранные для загрузки в базу файлы: ['rooms.json', 'students.json']
+2024-07-08 16:10:53,623 - queries - INFO - Доступные SQL-запросы в директории: /home/user/Desktop/BigData/SQL_queries: ['query_2.sql', 'query_indx.sql', 'query_1.sql', 'query_3.sql', 'query_4.sql']
+2024-07-08 16:10:55,966 - __main__ - INFO - Скрипт завершен
