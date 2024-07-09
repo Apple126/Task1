@@ -553,3 +553,25 @@ ON students (room)
 2024-07-08 16:10:49,269 - uploads - INFO - Выбранные для загрузки в базу файлы: ['rooms.json', 'students.json']
 2024-07-08 16:10:53,623 - queries - INFO - Доступные SQL-запросы в директории: /home/user/Desktop/BigData/SQL_queries: ['query_2.sql', 'query_indx.sql', 'query_1.sql', 'query_3.sql', 'query_4.sql']
 2024-07-08 16:10:55,966 - __main__ - INFO - Скрипт завершен
+2024-07-09 11:13:16,813 - __main__ - INFO - Загрузка переменных для подключения к базе данных
+2024-07-09 11:13:16,878 - db_connection - INFO - Успешное подключение к базе данных
+2024-07-09 11:13:16,878 - uploads - INFO - Указанная директория для JSON файлов: /home/user/Desktop/BigData
+2024-07-09 11:13:16,878 - uploads - INFO - Выбранные для загрузки в базу файлы: ['rooms.json', 'students.json']
+2024-07-09 11:16:01,569 - queries - INFO - Доступные SQL-запросы в директории: /home/user/Desktop/BigData/SQL_queries: ['query_2.sql', 'query_indx.sql', 'query_1.sql', 'query_3.sql', 'query_4.sql']
+2024-07-09 11:16:03,476 - __main__ - INFO - Скрипт завершен
+2024-07-09 11:17:20,073 - __main__ - INFO - Загрузка переменных для подключения к базе данных
+2024-07-09 11:17:20,113 - db_connection - INFO - Успешное подключение к базе данных
+2024-07-09 11:17:20,113 - uploads - INFO - Указанная директория для JSON файлов: /home/user/PycharmProjects/Test_GitFlow/BigData
+2024-07-09 11:17:20,113 - uploads - INFO - Выбранные для загрузки в базу файлы: ['rooms.json', 'students.json']
+2024-07-09 11:17:32,546 - queries - INFO - Доступные SQL-запросы в директории: /home/user/PycharmProjects/Test_GitFlow/BigData/SQL_queries: ['query_2.sql', 'query_indx.sql', 'query_1.sql', 'query_3.sql', 'query_4.sql']
+2024-07-09 11:17:42,077 - queries - INFO - Результат запроса в query_2.csv сохранен по пути: /home/user/PycharmProjects/Test_GitFlow/BigData/Results/query_2.csv
+2024-07-09 11:17:42,078 - queries - ERROR - Ошибка при выполнении SQL-запроса: (psycopg2.errors.DuplicateTable) ОШИБКА:  отношение "idx_room" уже существует
+
+[SQL: CREATE INDEX idx_room
+ON students (room)
+]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-07-09 11:17:42,088 - queries - INFO - Результат запроса в query_1.csv сохранен по пути: /home/user/PycharmProjects/Test_GitFlow/BigData/Results/query_1.csv
+2024-07-09 11:17:42,097 - queries - INFO - Результат запроса в query_3.csv сохранен по пути: /home/user/PycharmProjects/Test_GitFlow/BigData/Results/query_3.csv
+2024-07-09 11:17:42,115 - queries - INFO - Результат запроса в query_4.csv сохранен по пути: /home/user/PycharmProjects/Test_GitFlow/BigData/Results/query_4.csv
+2024-07-09 11:17:42,115 - __main__ - INFO - Скрипт завершен

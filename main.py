@@ -24,9 +24,9 @@ def main():
             'database': os.getenv('DB_NAME'),
         }
 
-        source_directory = r'/home/user/Desktop/BigData' # директория с загрузочными json файлами
-        output_directory = r'/home/user/Desktop/BigData/Results' # директория выгрузки результатов SQL-запроса
-        sql_queries_directory = r'/home/user/Desktop/BigData/SQL_queries' # директория c SQL-запросами (файлы .sql)
+        source_directory = r'/home/user/PycharmProjects/Test_GitFlow/BigData' # директория с загрузочными json файлами
+        output_directory = r'/home/user/PycharmProjects/Test_GitFlow/BigData/Results' # директория выгрузки результатов SQL-запроса
+        sql_queries_directory = r'/home/user/PycharmProjects/Test_GitFlow/BigData/SQL_queries' # директория c SQL-запросами (файлы .sql)
 
         engine = connection_to_database(db_params) # подключение к базе данных
         json_files_list = load_json_files(source_directory) # получаем список файлов json
