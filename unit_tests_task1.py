@@ -1,7 +1,7 @@
 import os
 import unittest
 from unittest.mock import patch, MagicMock, mock_open
-from sql_connect import connection_to_database, load_json_files, upload_json_files, sql_query
+from main import connection_to_database, load_json_files, upload_json_files, sql_query
 
 
 class TestConnection(unittest.TestCase):
