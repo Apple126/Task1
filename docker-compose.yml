@@ -5,25 +5,27 @@ services:
     image: postgres:latest
     container_name: my-postgres
     environment:
-      POSTGRES_PASSWORD: 12345
-      POSTGRES_DB: Task
+      POSTGRES_PASSWORD: 12345_D
+      POSTGRES_DB: Task_docker
     ports:
-      - "5432:5432"
+      - "8089:8089"
+    command: ["postgres", "-p", "8089"]  # указываем рабочий порт - 8089 для PostgreSQL в контейнере (по умолчанию 5432)
 
   python_app:
     build: .
     container_name: python_task1_docker
     environment:
       - DB_USER=postgres
-      - DB_PASSWORD=12345
+      - DB_PASSWORD=12345_D
       - DB_HOST=my-postgres
-      - DB_PORT=5432
-      - DB_NAME=Task
+      - DB_PORT=8089
+      - DB_NAME=Task_docker
       - UPLOAD_FILES=+
       - SQL_QUERY=SELECT * FROM students
       - FILE_FORMAT=json
       - FILE_NAME=output
     volumes:
-      - ./BigData:/app/BigData
+      - ./BigData:/app/BigData # сопоставляем директории docker-контейнера с директорией на нашей хост-ОС
+    # (при остановке, рестарте, отключении контейнера данные будут отображены в указанном месте на хост-ОС)
     depends_on:
       - postgres
